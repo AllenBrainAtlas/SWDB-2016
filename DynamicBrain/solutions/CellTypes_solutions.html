@@ -187,9 +187,11 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="border-left: 3px solid #000; padding: 1px; padding-left: 10px; background: #F0FAFF; "></p>
-<h2>Drive path</h2><p>First things first - let's make sure your drive path is set up appropriately. You will want to un-comment only one of these options depending on which operating system you are running. You also may have to tweak the option for your specific set-up (e.g. change the drive letter for Windows).</p>
+<div style="border-left: 3px solid #000; padding: 1px; padding-left: 10px; background: #F0FAFF; ">
+<h2>Drive path</h2>
 
+First things first - let's make sure your drive path is set up appropriately. You will want to un-comment only one of these options depending on which operating system you are running. You also may have to tweak the option for your specific set-up (e.g. change the drive letter for Windows).
+</div>
 </div>
 </div>
 </div>
@@ -244,9 +246,11 @@ If you have not installed the `allensdk` python module yet, do so from a command
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="border-left: 3px solid #000; padding: 1px; padding-left: 10px; background: #F0FAFF; "></p>
-<h2>1. Plotting ephys data from an experiment</h2><p>Let's start by looking at electrophysiology data from a recorded cell of the mouse visual cortex. The first step is to get access to the Neurodata Without Borders (.nwb) file that contains data from the cell we're interested in. Each recorded cell has its own NWB file.</p>
+<div style="border-left: 3px solid #000; padding: 1px; padding-left: 10px; background: #F0FAFF; ">
+<h2>1. Plotting ephys data from an experiment</h2>
 
+Let's start by looking at electrophysiology data from a recorded cell of the mouse visual cortex. The first step is to get access to the Neurodata Without Borders (.nwb) file that contains data from the cell we're interested in. Each recorded cell has its own NWB file.
+</div>
 </div>
 </div>
 </div>
@@ -338,9 +342,14 @@ Try loading the NWB file for the cell with specimen ID of 324493977 and assignin
 <div style="border-left: 3px solid #000; padding: 1px; padding-left: 10px; background: #F0FAFF; ">
 
 <p>
-The electrophysiological data in a Cell Types NWB file is organized by "sweeps." These sweeps represent specific periods during which a single stimulus is applied to the cell and the response is recorded. Different types of stimuli can be applied to the cell, and similar stimuli are grouped by type on the web app. For example, one-second long step current injections are grouped together under the name "Long Squares." We refer to sweeps by their number, which are integers indicating the order in which the sweeps were collected.</p><p>
-There are typically periods of time during an experiment between sweeps; this may be due to the experimentalist making some on-line adjustments, or may be intentional to allow the cell to return to some baseline after an intense stimulus. </p><p>
+The electrophysiological data in a Cell Types NWB file is organized by "sweeps." These sweeps represent specific periods during which a single stimulus is applied to the cell and the response is recorded. Different types of stimuli can be applied to the cell, and similar stimuli are grouped by type on the web app. For example, one-second long step current injections are grouped together under the name "Long Squares." We refer to sweeps by their number, which are integers indicating the order in which the sweeps were collected.</p>
+
+<p>
+There are typically periods of time during an experiment between sweeps; this may be due to the experimentalist making some on-line adjustments, or may be intentional to allow the cell to return to some baseline after an intense stimulus. </p>
+
+<p>
 Returning to the example, we now have an object called `data_set` that provides access to the data in the NWB file through built-in methods. We can access sweep-level data like this:</p>
+</div>
 </div>
 </div>
 </div>
@@ -450,8 +459,8 @@ Most of the sweeps in the Cell Types Database are recorded in current-clamp mode
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="border-left: 3px solid #000; padding: 1px; padding-left: 10px; background: #F0FAFF; ">
 
-<p>The time points are not included in the NWB file as a waveform, but we can generate one based on the sampling rate:</p>
-
+The time points are not included in the NWB file as a waveform, but we can generate one based on the sampling rate:
+</div>
 </div>
 </div>
 </div>
@@ -1335,7 +1344,9 @@ There is also a [set of features](http://help.brain-map.org/download/attachments
 <div style="border-left: 3px solid #000; padding: 1px; padding-left: 10px; background: #F0FAFF; ">
 <p>
 **Documentation:**
+
 [CellTypesCache.get_ephys_features()](https://alleninstitute.github.io/AllenSDK/allensdk.core.html?highlight=get_ephys_features#allensdk.core.cell_types_cache.CellTypesCache.get_ephys_features)
+
 </p>
 </div>
 </div>
@@ -1348,8 +1359,8 @@ There is also a [set of features](http://help.brain-map.org/download/attachments
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="border-left: 3px solid #000; padding: 1px; padding-left: 10px; background: #F0FAFF; ">
 
-<p>That's how to get all the ephys features for a given specimen - what if we want a particular feature for all cells?</p>
-
+That's how to get all the ephys features for a given specimen - what if we want a particular feature for all cells?
+</div>
 </div>
 </div>
 </div>
