@@ -1,0 +1,6 @@
+File Calculate Variability is modifiable code that calculates the following:
+1) Reliability of cell response to preferred Natural Scene or drifting grating
+2) STD of response
+3) COV of response
+4) K-S test of distributions
+5) Anderson Darling statistic
