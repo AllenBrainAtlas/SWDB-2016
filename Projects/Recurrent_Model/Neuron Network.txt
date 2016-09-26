@@ -1,0 +1,6 @@
+Neuron Network
+
+#step 1: GenerateNeurons 	#generate L23 neuron positions and save to the build
+#step 2: GenerateInputMapping	#generates L4-> L23 network (stored in ../build/FILENAME.csv)
+#step 3: GenerateConnections	#generates L23-> L23 network (stored in ../build/FOLDERNAME/target_xxx_yyy.dat)
+#step 4:

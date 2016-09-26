@@ -1,0 +1,24 @@
+begintemplate LIF_pyramid_1
+
+public init, connect2target
+
+//public synlist
+
+objref ac
+objref this
+
+proc init() {
+	ac = new IntFire1()
+	ac.tau = 24.0
+	ac.refrac = 3.0
+}
+
+obfunc connect2target() { localobj nc
+	nc = new NetCon(ac, $o1)
+	if (numarg() == 2) { $o2 = nc } // for backward compatibility
+	return nc
+}
+
+
+endtemplate LIF_pyramid_1
+

@@ -1,0 +1,83 @@
+{
+  "biophys": [
+    {
+      "log_config_path": "logging.conf", 
+      "model_file": [
+        "config_ll1_g8_8_sd228_test500ms_cn10_no_con.json"
+      ], 
+      "output_dir": "output_ll1_g8_8_sd228_test500ms_cn10_no_con"
+    }
+  ], 
+  "run": {
+    "tstop": 500.0, 
+    "dt": 0.025
+  }, 
+  "ext_inputs": {
+    "/data/mat/antona/network/14-simulations/6-LGN_firing_rates_and_spikes/LGN_spike_trains/output/grating_8_LGN_spk.dat": {
+      "mode": "file",
+      "map": "build/ll1_inputs_from_LGN.csv",
+      "trial": 8,
+      "t_shift": -500.0,
+      "trials_in_file": 10
+    },
+    "/data/mat/antona/network/14-simulations/8-network-start/tw_build/tw_src_0/1_spk.dat": {
+      "mode": "file",
+      "map": "tw_data/ll1_tw_build/mapping_tw_src_0.csv",
+      "trial": 0,
+      "t_shift": 0.0,
+      "trials_in_file": 1
+    }
+  }, 
+  "syn_data_file": "syn_data_228.json", 
+  "neuron": [
+    {
+      "hoc": [
+        "stdgui.hoc", 
+        "import3d.hoc", 
+        "cell.hoc"
+      ]
+    }
+  ], 
+  "manifest": [
+    {
+      "type": "dir", 
+      "spec": ".", 
+      "key": "BASEDIR"
+    }, 
+    {
+      "key": "MODFILE_DIR", 
+      "type": "dir", 
+      "spec": "modfiles", 
+      "parent_key": "BASEDIR"
+    }, 
+    {
+      "type": "file", 
+      "spec": "build/ll1.csv", 
+      "key": "CELL_DB"
+    }
+  ], 
+  "postprocessing": {
+    "in_t_omit": 500.0, 
+    "post_t_omit": 0.0
+  }, 
+  "cell_data_tracking": {
+    "SEClamp_insert_cell_gid_step": 500, 
+    "id_step_save_t_series": 50, 
+    "do_save_t_series": "yes", 
+    "SEClamp_insert": "yes", 
+    "SEClamp_insert_first_cell": 2
+  }, 
+  "conditions": [
+    {
+      "celsius": 34.0, 
+      "erev": [
+        {
+          "ena": 53.0, 
+          "section": "soma", 
+          "ek": -107.0
+        }
+      ], 
+      "v_init": -80
+    }
+  ]
+}

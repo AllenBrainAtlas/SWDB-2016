@@ -1,0 +1,14 @@
+#PBS -q mindscope
+#PBS -l walltime=6:00:00
+#PBS -l nodes=45:ppn=24
+#PBS -N 1cell_g8_8_sd278_test500ms
+#PBS -r n
+#PBS -j oe
+#PBS -o output_1cell_g8_8_sd278_test500ms/1cell_g8_8_sd278_test500ms.out
+#PBS -m a
+cd $PBS_O_WORKDIR
+
+export LD_PRELOAD=/usr/lib64/libstdc++.so.6
+export PATH=/shared/utils.x86_64/hydra-3.0.4/bin/:$PATH
+
+mpiexec -np 1080 nrniv -mpi run_1cell_g8_8_sd278_test500ms.py > output_1cell_g8_8_sd278_test500ms/log.txt

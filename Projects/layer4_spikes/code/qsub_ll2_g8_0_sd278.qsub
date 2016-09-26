@@ -1,0 +1,14 @@
+#PBS -q mindscope
+#PBS -l walltime=6:00:00
+#PBS -l nodes=5:ppn=32
+#PBS -N ll2_g8_0_sd278
+#PBS -r n
+#PBS -j oe
+#PBS -o output_ll2_g8_0_sd278/ll2_g8_0_sd278.out
+#PBS -m a
+cd $PBS_O_WORKDIR
+
+export LD_PRELOAD=/usr/lib64/libstdc++.so.6
+export PATH=/shared/utils.x86_64/hydra-3.0.4/bin/:$PATH
+
+mpiexec -np 160 nrniv -mpi run_ll2_g8_0_sd278.py > output_ll2_g8_0_sd278/log.txt

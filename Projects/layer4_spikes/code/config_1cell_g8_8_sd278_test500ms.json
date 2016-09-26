@@ -1,0 +1,84 @@
+{
+  "biophys": [
+    {
+      "log_config_path": "logging.conf", 
+      "model_file": [
+        "config_1cell_g8_8_sd278_test500ms.json"
+      ], 
+      "output_dir": "output_1cell_g8_8_sd278_test500ms"
+    }
+  ], 
+  "run": {
+    "tstop": 500.0, 
+    "dt": 0.025
+  }, 
+  "syn_data_file": "syn_data_278.json", 
+  "neuron": [
+    {
+      "hoc": [
+        "stdgui.hoc", 
+        "import3d.hoc", 
+        "cell.hoc"
+      ]
+    }
+  ], 
+  "manifest": [
+    {
+      "type": "dir", 
+      "spec": ".", 
+      "key": "BASEDIR"
+    }, 
+    {
+      "parent_key": "BASEDIR", 
+      "type": "dir", 
+      "spec": "modfiles", 
+      "key": "MODFILE_DIR"
+    }, 
+    {
+      "type": "file", 
+      "spec": "build/1cell.csv", 
+      "key": "CELL_DB"
+    }
+  ], 
+  "connections": "build/ll2_connections", 
+  "postprocessing": {
+    "in_t_omit": 500.0, 
+    "post_t_omit": 0.0
+  }, 
+  "ext_inputs": {
+    "tw_data/ll2_tw_build/2_tw_src/68_spk.dat": {
+      "map": "tw_data/ll2_tw_build/mapping_2_tw_src.csv", 
+      "trials_in_file": 1, 
+      "mode": "file", 
+      "t_shift": 0.0, 
+      "trial": 0
+    }, 
+    "/data/mat/antona/network/14-simulations/6-LGN_firing_rates_and_spikes/LGN_spike_trains/output2/grating_8_LGN_spk.dat": {
+      "map": "build/ll2_inputs_from_LGN.csv", 
+      "trials_in_file": 10, 
+      "mode": "file", 
+      "t_shift": -500.0, 
+      "trial": 8
+    }
+  }, 
+  "cell_data_tracking": {
+    "SEClamp_insert_cell_gid_step": 200, 
+    "id_step_save_t_series": 50, 
+    "do_save_t_series": "yes", 
+    "SEClamp_insert": "yes", 
+    "SEClamp_insert_first_cell": 0
+  }, 
+  "conditions": [
+    {
+      "celsius": 34.0, 
+      "erev": [
+        {
+          "ena": 53.0, 
+          "section": "soma", 
+          "ek": -107.0
+        }
+      ], 
+      "v_init": -80
+    }
+  ]
+}

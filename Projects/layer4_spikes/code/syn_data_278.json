@@ -1,0 +1,44 @@
+{
+  "Scnn1a": {
+    "LGN_exc": { "w": 4.0e-5, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [0.0, 150.0] },
+    "exc": { "w": 6.4e-5, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [30.0, 150.0] },
+    "tw_exc": { "w": 15.0e-5, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [30.0, 150.0] },
+    "inh": { "w": 18.0e-5, "e": -70.0, "tau1": 2.7, "tau2": 15, "delay": 2.0, "sec": ["somatic", "basal", "apical"], "dcutoff": [0.0, 50.0] }
+  },
+  "Rorb": {
+    "LGN_exc": { "w": 5.0e-5, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [0.0, 150.0] },
+    "exc": { "w": 5.5e-5, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [30.0, 150.0] },
+    "tw_exc": { "w": 15.0e-5, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [30.0, 150.0] },
+    "inh": { "w": 18.0e-5, "e": -70.0, "tau1": 2.7, "tau2": 15, "delay": 2.0, "sec": ["somatic", "basal", "apical"], "dcutoff": [0.0, 50.0] }
+  },
+  "Nr5a1": {
+    "LGN_exc": { "w": 5.0e-5, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [0.0, 150.0] },
+    "exc": { "w": 7.2e-5, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [30.0, 150.0] },
+    "tw_exc": { "w": 19.0e-5, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [30.0, 150.0] },
+    "inh": { "w": 18.0e-5, "e": -70.0, "tau1": 2.7, "tau2": 15, "delay": 2.0, "sec": ["somatic", "basal", "apical"], "dcutoff": [0.0, 50.0] }
+  },
+  "PV1": {
+    "LGN_exc": { "w": 10e-5, "e": 0.0, "tau1": 0.1, "tau2": 0.5, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] },
+    "exc": { "w": 35e-5, "e": 0.0, "tau1": 0.1, "tau2": 0.5, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] },
+    "tw_exc": { "w": 220e-5, "e": 0.0, "tau1": 0.1, "tau2": 0.5, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] },
+    "inh": { "w": 20e-5, "e": -70.0, "tau1": 0.2, "tau2": 8.0, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] }
+  },
+  "PV2": {
+    "LGN_exc": { "w": 9e-5, "e": 0.0, "tau1": 0.1, "tau2": 0.5, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] },
+    "exc": { "w": 27e-5, "e": 0.0, "tau1": 0.1, "tau2": 0.5, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] },
+    "tw_exc": { "w": 130e-5, "e": 0.0, "tau1": 0.1, "tau2": 0.5, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] },
+    "inh": { "w": 20e-5, "e": -70.0, "tau1": 0.2, "tau2": 8.0, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] }
+  },
+  "LIF_exc": {
+    "LGN_exc": { "w": 4.5e-3, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [0.0, 150.0] },
+    "exc": { "w": 1.9e-3, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [30.0, 150.0] },
+    "tw_exc": { "w": 15.0e-3, "e": 0.0, "tau1": 1.0, "tau2": 3.0, "delay": 2.0, "sec": ["basal", "apical"], "dcutoff": [30.0, 150.0] },
+    "inh": { "w": 9.0e-3, "e": -70.0, "tau1": 2.7, "tau2": 15.0, "delay": 2.0, "sec": ["somatic", "basal", "apical"], "dcutoff": [0.0, 50.0] }
+  },
+  "LIF_inh": {
+    "LGN_exc" : { "w": 2.0e-3, "e": 0.0, "tau1": 0.1, "tau2": 0.5, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] },
+    "exc" : { "w": 4.3e-3, "e": 0.0, "tau1": 0.1, "tau2": 0.5, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] },
+    "tw_exc" : { "w": 50e-3, "e": 0.0, "tau1": 0.1, "tau2": 0.5, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] },
+    "inh": { "w": 2.25e-3, "e": -70.0, "tau1": 0.2, "tau2": 8.0, "delay": 2.0, "sec": ["somatic", "basal"], "dcutoff": [0.0, 1e20] }
+  }
+}
