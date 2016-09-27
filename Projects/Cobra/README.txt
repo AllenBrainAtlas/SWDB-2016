@@ -14,6 +14,7 @@ We split the analysis/files into four components. Best idea is to start with the
 
 0. Core algorithm files that calculate population coupling metric given input spikes:
 cobra_analysis.py
+[Pop Coupling subdirectory]: See readme inside directory. This set of files includes a generative model of neural responses.
 
 
 1. Files dealing with synthetic data to validate the algorithm implementation:
